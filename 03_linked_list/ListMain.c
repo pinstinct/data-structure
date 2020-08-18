@@ -17,7 +17,7 @@ int main(void)
 
     // 저장된 데이터 전체 출력
     printf("현재 데이터의 수: %d \n", LCount(&list));
-    if (LFirst(&list, &data))  // 첫 번째 데이터 조회
+    if (LFirst(&list, &data)) // 첫 번째 데이터 조회
     {
         printf("%d ", data);
         while (LNext(&list, &data))
@@ -34,10 +34,10 @@ int main(void)
             if (data == 22)
                 LRemove(&list);
     }
- 
+
     // 삭제 후 남은 데이터 전체 출력
-        printf("현재 데이터의 수: %d \n", LCount(&list));
-    if (LFirst(&list, &data))  // 첫 번째 데이터 조회
+    printf("현재 데이터의 수: %d \n", LCount(&list));
+    if (LFirst(&list, &data)) // 첫 번째 데이터 조회
     {
         printf("%d ", data);
         while (LNext(&list, &data))
